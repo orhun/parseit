@@ -33,7 +33,7 @@ See [examples](./examples/).
 
 ## Cargo Features
 
-- `gzip`: support reading gzip (`.gz`) files (enabled as default)
+- `gzip`: support reading gzip (`.gz`) files
 
 ## License
 

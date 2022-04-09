@@ -42,9 +42,9 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('Cargo.toml') }}
 
       - name: Build
-        run:
-          - cargo build
-          - cargo build --no-default-features
+        run: |
+          cargo build
+          cargo build --no-default-features
 
   test:
     name: Run tests

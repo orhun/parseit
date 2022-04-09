@@ -9,6 +9,7 @@ homepage = "https://github.com/orhun/parseit"
 repository = "https://github.com/orhun/parseit"
 keywords = ["text", "parser", "regex", "glob"]
 categories = ["parsing"]
+include = ["Cargo.toml", "src/**/*", "LICENSE-*", "README.md", "CHANGELOG.md"]
 edition = "2021"
 rust-version = "1.56.1"
 

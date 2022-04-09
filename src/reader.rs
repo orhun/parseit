@@ -104,4 +104,24 @@ mod tests {
         assert!(read_to_string(path)?.contains(&format!("name = \"{}\"", env!("CARGO_PKG_NAME"))));
         Ok(())
     }
+
+    #[cfg(feature = "gzip")]
+    #[test]
+    fn test_gzip_reader() -> Result<(), Error> {
+        use flate2::write::GzEncoder;
+        use flate2::Compression;
+        use std::fs::{self, File};
+        use std::io::Write;
+
+        let data = "gzip-test";
+        let path = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("test.gz");
+        let file = File::create(&path)?;
+        let mut encoder = GzEncoder::new(file, Compression::default());
+        encoder.write_all(data.as_bytes())?;
+        encoder.finish()?;
+
+        assert_eq!(data, read_gzip(&path)?);
+        fs::remove_file(path)?;
+        Ok(())
+    }
 }

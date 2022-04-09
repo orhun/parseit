@@ -26,6 +26,10 @@ for document in documents {
 
 See [examples](./examples/).
 
+## Cargo Features
+
+- `gzip`: support reading gzip (`.gz`) files (enabled as default)
+
 ## License
 
 Licensed under either of [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) or [The MIT License](http://opensource.org/licenses/MIT) at your option.

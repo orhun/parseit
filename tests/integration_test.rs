@@ -10,14 +10,14 @@ fn test_parser() -> Result<(), Error> {
 
     assert!(documents
         .iter()
-        .find(|d| d.path == PathBuf::from(base_path.join("src").join("lib.rs")))
+        .find(|d| d.path == base_path.join("src").join("lib.rs"))
         .unwrap()
         .paragraphs
         .is_empty());
 
     assert!(documents
         .iter()
-        .find(|d| d.path == PathBuf::from(base_path.join("src").join("reader.rs")))
+        .find(|d| d.path == base_path.join("src").join("reader.rs"))
         .unwrap()
         .paragraphs[0]
         .contents

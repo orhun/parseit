@@ -3,7 +3,7 @@ use regex::Captures;
 use std::path::PathBuf;
 
 /// Representation of a paragraph in a [`Document`].
-#[derive(Clone, Debug, PartialEq)]
+#[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Paragraph {
     /// Paragraph title.
     pub title: String,
@@ -51,7 +51,7 @@ impl Paragraph {
 }
 
 /// Representation of a parsed document which consists of paragraphs.
-#[derive(Clone, Debug, PartialEq)]
+#[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Document {
     /// Paragraphs in the document.
     pub paragraphs: Vec<Paragraph>,

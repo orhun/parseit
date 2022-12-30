@@ -1,6 +1,6 @@
 # parseit
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/orhun/parseit/Continuous%20Integration)](https://github.com/orhun/parseit/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/orhun/parseit/ci.yml)](https://github.com/orhun/parseit/actions)
 [![Crates.io](https://img.shields.io/crates/v/parseit)](https://crates.io/crates/parseit)
 [![docs.rs](https://img.shields.io/docsrs/parseit)](https://docs.rs/parseit/latest)
 [![Codecov](https://img.shields.io/codecov/c/gh/orhun/parseit)](https://app.codecov.io/gh/orhun/parseit)

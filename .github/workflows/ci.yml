@@ -108,6 +108,7 @@ jobs:
             jq -r ".[0].assets[] | select(.name | contains (\"Linux_x86_64\")).browser_download_url" | \
             wget -qi -
           tar -xvf cargo-msrv*_Linux_x86_64.tar -C  ~/.cargo/bin/ cargo-msrv
+          cargo msrv list
           printf "Checking MSRV..."
           cargo msrv --output-format json verify | tail -n 1 | jq --exit-status '.success'
 

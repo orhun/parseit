@@ -5,7 +5,7 @@ use std::path::PathBuf;
 // Parse Cargo manifest and print sections.
 fn main() -> Result<(), Error> {
     // Create a parser.
-    let parser = Parser::new(&["Cargo.*"], &[], r#"^\[(.*)\]$\n"#)?;
+    let parser = Parser::new(&["Cargo.*"], &[], r"^\[(.*)\]$\n")?;
 
     // Parse documents.
     let documents = parser.parse(&PathBuf::from(env!("CARGO_MANIFEST_DIR")))?;

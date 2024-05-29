@@ -45,4 +45,4 @@ Unless you explicitly state otherwise, any contribution intentionally submitted 
 
 ## Copyright
 
-Copyright © 2022-2023, [Orhun Parmaksız](mailto:orhunparmaksiz@gmail.com)
+Copyright © 2022-2024, [Orhun Parmaksız](mailto:orhunparmaksiz@gmail.com)
